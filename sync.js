@@ -19,7 +19,7 @@ function applyCloud(row){
  revision=Number(row.revision);
  for(const [id,value] of Object.entries(row.data)){
   const el=document.getElementById(id);
-  if(el?.tagName==='INPUT'&&!(id in pending)&&!(id in inflight)&&el!==document.activeElement)el.value=String(value);
+  if(el?.tagName==='INPUT'&&!(id in pending)&&!(id in inflight)&&el!==document.activeElement){el.value=String(value);formatMoney(el)}
  }
  for(const [id,value] of Object.entries(pending)){const el=document.getElementById(id);if(el)el.value=value}
  calc();
