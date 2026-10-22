@@ -33,7 +33,7 @@ const initial=[
 {name:'III / Projekt techniczny (szczegółowość wykonawczego)',weeks:12,lead:80,assist:100,risk:10,margin:15}
 ];
 const stageNotes=["Termin umowny: do 4 tygodni od zawarcia umowy","Termin umowny: do 2 miesięcy od zawarcia umowy","Termin umowny: do 5 miesięcy od zawarcia umowy","Termin umowny: do 5 miesięcy od zawarcia umowy"];
-const extraDescriptions={estimate:"Przedmiary wielobranżowe; kosztorysy inwestorskie; specyfikacje techniczne",structure:"Ocena ingerencji; obliczenia; rozwiązania konstrukcyjne",sanitary:"Wentylacja; klimatyzacja; wod.-kan.; dostosowania instalacji",electrical:"Zasilanie; oświetlenie; LAN; Wi-Fi; SSP; CCTV; KD; SSWiN",av:"Nagłośnienie; obraz; sterowanie; integracja systemów",acoustic:"Czas pogłosu; zrozumiałość mowy; izolacyjność; hałas instalacji",fire:"Wymagania ppoż.; ekspertyzy w wymaganym zakresie; uzgodnienie",hygiene:"Wymagania higieniczno-sanitarne; uzgodnienia",heritage:"Wymagania konserwatorskie; uzgodnienia; niezbędne zgody",survey:"Skan 3D; pomiary przestrzeni; chmura punktów",inventory:"Pomiary uzupełniające; dokumentacja stanu istniejącego",formal:"Wymagane opinie; uzgodnienia; dokumentacja formalna"};
+const extraDescriptions={estimate:"Przedmiary wielobranżowe; kosztorysy inwestorskie; specyfikacje techniczne",structure:"Ocena ingerencji; obliczenia; rozwiązania konstrukcyjne",sanitary:"Wentylacja; klimatyzacja; wod.-kan.; dostosowania instalacji",electrical:"Zasilanie; oświetlenie; LAN; Wi-Fi; SSP; CCTV; KD; SSWiN",av:"Nagłośnienie; obraz; sterowanie; integracja systemów",acoustic:"Czas pogłosu; zrozumiałość mowy; izolacyjność; hałas instalacji",fire:"Wymagania ppoż.; ekspertyzy w wymaganym zakresie; uzgodnienie",hygiene:"Wymagania higieniczno-sanitarne; uzgodnienia",heritage:"Wymagania konserwatorskie; uzgodnienia; niezbędne zgody",survey:"Skan 3D; pomiary przestrzeni; chmura punktów",inventory:"Pomiary uzupełniające; dokumentacja stanu istniejącego",formal:"Wymagane opinie; uzgodnienia; dokumentacja formalna",signage:"Informacja graficzno-tekstowa; oznakowanie kierunkowe; tablice i identyfikacja pomieszczeń; adaptacja istniejącego logo; mapy tyflograficzne; dostępność; zestawienie elementów; dokumentacja wykonawcza"};
 const extraItems=[
 ['estimate','Przedmiary, kosztorysy, STWiORB'],
 ['structure','Konstrukcja'],
@@ -46,7 +46,8 @@ const extraItems=[
 ['heritage','Uzgodnienia konserwatorskie'],
 ['survey','Skanowanie 3D'],
 ['inventory','Inwentaryzacja uzupełniająca'],
-['formal','Pozostałe opinie, uzgodnienia i opracowania']
+['formal','Pozostałe opinie, uzgodnienia i opracowania'],
+['signage','Projekt systemu informacji wizualnej i oznakowania budynku']
 ];
 const $=id=>document.getElementById(id);
 const fmt=n=>new Intl.NumberFormat('pl-PL',{maximumFractionDigits:1,useGrouping:true}).format(n).replace(/[\u00a0\u202f]/g,' ');
