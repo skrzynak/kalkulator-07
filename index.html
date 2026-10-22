@@ -14,6 +14,9 @@
 button,input{border-radius:8px;}
 .dot{border-radius:3px;}
 @media print{.section,.tablewrap,.metric,.chartbox{box-shadow:none;}}
+
+/* Przywrocone proste narozniki; cienie pozostaja bez zmian. */
+.section,.tablewrap,.metric,.chartbox,button,input,.dot,.donut,.donutcore{border-radius:0;}
 </style></head><body><main>
 <header><div><h1>Kalkulator kosztu projektu</h1></div><div class="actions"><button id="save" type="button">Zapisz online</button><button id="reset" type="button">Przywróć domyślne</button><button type="button" onclick="window.print()">Drukuj</button></div></header><p id="syncStatus" class="hint" role="status" aria-live="polite">Łączenie ze wspólnymi danymi…</p><p class="hint">Dane są wspólne dla wszystkich odwiedzających. Zmiany zapisują się automatycznie online. Przy jednoczesnej zmianie tego samego pola obowiązuje ostatni zapis.</p>
 <section class="section"><h2>01 / Ustawienia ogólne</h2><div class="setgrid">
