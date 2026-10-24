@@ -21,6 +21,17 @@ button,input{border-radius:8px;}
 .donut,.donutcore{border-radius:50%;}
 
 .group-settings{display:flex;align-items:end;gap:16px;flex-wrap:wrap;padding:0 0 16px}.group-settings .field{width:210px}.group-explainer{font-size:12px;color:var(--sub);align-self:center;max-width:370px}@media(max-width:600px){.group-settings .field{width:calc(50% - 8px)}}
+
+/* Spójne obramowania i zaokrąglone sekcje. */
+:root{--frame-width:1px;--frame-radius:12px}
+.section,.tablewrap,.metric,.chartbox,button,input{border-width:var(--frame-width);border-style:solid}
+.section{border-radius:var(--frame-radius)}
+.tablewrap,.metric,.chartbox{border-radius:var(--frame-radius)}
+button,input{border-radius:8px}
+.summary .metric{border-width:var(--frame-width)}
+tfoot td{border-top-width:var(--frame-width)}
+header{border-bottom-width:var(--frame-width)}
+.donut,.donutcore{border-radius:50%}
 </style></head><body><main>
 <header><div><h1>Kalkulator kosztu projektu</h1></div><div class="actions"><button id="save" type="button">Zapisz online</button><button id="reset" type="button">Przywróć domyślne</button><button type="button" onclick="window.print()">Drukuj</button></div></header><p id="syncStatus" class="hint" role="status" aria-live="polite">Łączenie ze wspólnymi danymi…</p><p class="hint">Dane są wspólne dla wszystkich odwiedzających. Zmiany zapisują się automatycznie online. Przy jednoczesnej zmianie tego samego pola obowiązuje ostatni zapis.</p>
 <section class="section"><h2>01 / Ustawienia ogólne</h2><div class="setgrid">
